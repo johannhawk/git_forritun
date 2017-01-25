@@ -2,8 +2,8 @@ val = 4
 while val != 0:
     print("=+=Valmynd=+=")
     print("1.")
-    print("?.")
-    print("?.")
+    print("2.")
+    print("3.")
     print("0. Hætta")
     print("=+=Valmynd=+=")
     val = int(input("Veldu :"))
@@ -23,13 +23,30 @@ while val != 0:
         print("=2=")
         nafn21 = input("Fornafn? :")
         nafn22 = input("Eftirnafn? :")
-        print("Halló")
+        print("Halló",nafn21,nafn22)
         validerror = 0
 
     if val == 3:
+        upp3 = 0
+        low3 = 0
+        spe3 = 0
+        t31 = ""
+        t32 = ""
         print("=3=")
+        mtext3 = input("Sláðu inn texta : ")
+        for charac in mtext3:
+            if charac.isupper():
+                upp3 += 1
+            if charac.islower():
+                low3 += 1
+        print("Fjöldi hástafi : ", upp3)
+        print("Fjöldi lágstafi : ", low3)
+        
+
+
 
         validerror = 0
+
 
     if val == 0:
         validerror = 0
