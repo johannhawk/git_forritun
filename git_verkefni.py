@@ -40,7 +40,6 @@ while val != 0:
         print("Fjöldi hástafi : ", upp3)
         print("Fjöldi lágstafi : ", low3)
         textlen3 = len(mtext3)
-        t23 = 1
         for t in range(0,textlen3-1):
             lconf = 0
             uconf = 0
@@ -53,15 +52,11 @@ while val != 0:
             if uconf == 1 and lconf == 1:
                 spe3 += 1
         print("Fjöldi lágstafi eftir hástafi : ", spe3)
-
-
         validerror = 0
-
 
     if val == 0:
         validerror = 0
         exit()
-
 
     if validerror == 1:
         print("!!! Ekki rétt númer !!!")
