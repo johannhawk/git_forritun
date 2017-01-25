@@ -19,6 +19,21 @@ while val != 0:
         print("Margfölduð =",num13)
         validerror = 0
 
+    if val == 2:
+        print("=2=")
+        nafn21 = input("Fornafn? :")
+        nafn22 = input("Eftirnafn? :")
+        print("Halló")
+        validerror = 0
+
+    if val == 3:
+        print("=3=")
+
+        validerror = 0
+
+    if val == 0:
+        validerror = 0
+        exit()
 
 
     if validerror == 1:
