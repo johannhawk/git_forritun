@@ -30,8 +30,6 @@ while val != 0:
         upp3 = 0
         low3 = 0
         spe3 = 0
-        t31 = ""
-        t32 = ""
         print("=3=")
         mtext3 = input("Sláðu inn texta : ")
         for charac in mtext3:
@@ -41,8 +39,20 @@ while val != 0:
                 low3 += 1
         print("Fjöldi hástafi : ", upp3)
         print("Fjöldi lágstafi : ", low3)
-        
-
+        textlen3 = len(mtext3)
+        t23 = 1
+        for t in range(0,textlen3-1):
+            lconf = 0
+            uconf = 0
+            samp13 = mtext3[t]
+            samp23 = mtext3[t+1]
+            if samp13.isupper() == 1:
+                uconf = 1
+            if samp23.islower() ==1:
+                lconf = 1
+            if uconf == 1 and lconf == 1:
+                spe3 += 1
+        print("Fjöldi lágstafi eftir hástafi : ", spe3)
 
 
         validerror = 0
